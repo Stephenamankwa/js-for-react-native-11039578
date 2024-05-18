@@ -14,3 +14,19 @@ function processArray(arr) {
         }
     });
 }
+
+/**
+ * @param {string[]} stringAr
+ * @param {number[]} numArr
+ * @returns {string[]} 
+ */
+function formatArrayStrings(stringAr, numArr) {
+    return stringAr.map((str, index) => {
+        const num = numArr[index];
+        if (num % 2 === 0) {
+            return str.toUpperCase();
+        } else {
+            return str.toLowerCase();
+        }
+    });
+}
